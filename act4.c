@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "personaje.h"
+
 
 void num(){
 
@@ -51,7 +53,8 @@ int main(){
         printf(" 1.- Ingresar Números Enteros \n");
         printf(" 2.- Mostrar cadena 'n' veces \n");
         printf(" 3.- Personajes \n");
-        printf(" 4.- Salir \n");
+        printf(" 4.- Mostrar Personajes \n");
+        printf(" 5- Salir \n");
         scanf("%c",&opt);
 
         switch (opt){
@@ -67,7 +70,10 @@ int main(){
             mostrar(n, arreglo);
             break;
         case '3':
-            num();
+            capturar_personaje();
+            break;
+        case '4':
+            mostrar_personaje();
             break;
         
         default:
@@ -75,7 +81,7 @@ int main(){
         }
         fflush(stdin);
 
-    }while (opt != '4');
+    }while (opt != '5');
 
     return 0;    
 
