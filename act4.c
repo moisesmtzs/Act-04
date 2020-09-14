@@ -45,11 +45,14 @@ void mostrar( int n, char arreglo[] ){
 int main(){
 
     char opt;
-    char arreglo[50];
+    char arreglo[50],nombre[50];
     int n;
+    printf("Ingresa tu nombre: ");
+    fgets( nombre, sizeof(nombre), stdin );
+    printf("\n|Bienvenido %s |\n\n",nombre);
+    fflush(stdin);
     do{
 
-        printf("\n\n");
         printf(" 1.- Ingresar Números Enteros \n");
         printf(" 2.- Mostrar cadena 'n' veces \n");
         printf(" 3.- Personajes \n");
