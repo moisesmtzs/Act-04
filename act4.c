@@ -31,7 +31,11 @@ void num(){
 
 void mostrar( int n, char arreglo[] ){
 
-    
+    for ( int i = 0 ; i<n ; i++ ){
+
+        printf("%s", arreglo);
+
+    }
 
 
 }
@@ -55,7 +59,12 @@ int main(){
             num();
             break;
         case '2':
-            mostrar( n, arreglo );
+            printf("Ingresa una cadena de caracteres: \n");
+            fflush(stdin);
+            fgets( arreglo, sizeof(arreglo), stdin );
+            printf("n veces a mostrar el arreglo: ");
+            scanf("%d",&n);
+            mostrar(n, arreglo);
             break;
         case '3':
             num();
