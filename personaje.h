@@ -41,10 +41,7 @@ void mostrar_personaje(){
         printf("Fuerza del personaje: %f\n",personajes[i].fuerza);
         printf("Salud del personaje: %f\n",personajes[i].salud);
 
-
     }
-
-
 
 }
 
